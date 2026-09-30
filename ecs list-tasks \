@@ -1,0 +1,40 @@
+[
+    {
+        "Service": "app-frontend-service-dev",
+        "Desired": 1,
+        "Running": 1,
+        "Pending": 1,
+        "Events": [
+            "(service app-frontend-service-dev) has started 1 tasks: (task 900337466e2f47098093705769cab79a). Amazon ECS replaced 1 tasks due to an unhealthy status.",
+            "(service app-frontend-service-dev) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-south-1:916921211430:targetgroup/app-frontend-tg-dev/d9951808de7f99be)",
+            "(service app-frontend-service-dev) has started 1 tasks: (task b1d8465c91ad4188aef9f86d590b47ef).",
+            "(service app-frontend-service-dev, taskSet ecs-svc/6495304612731949930) has begun draining connections on 1 tasks.",
+            "(service app-frontend-service-dev) deregistered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-south-1:916921211430:targetgroup/app-frontend-tg-dev/d9951808de7f99be)"
+        ]
+    },
+    {
+        "Service": "app-backend-service-dev",
+        "Desired": 1,
+        "Running": 1,
+        "Pending": 0,
+        "Events": [
+            "(service app-backend-service-dev) has reached a steady state.",
+            "(service app-backend-service-dev) (deployment ecs-svc/2693845474587295607) deployment completed.",
+            "(service app-backend-service-dev) registered 1 targets in (target-group arn:aws:elasticloadbalancing:ap-south-1:916921211430:targetgroup/app-backend-tg-dev/a3d1fcb27dff0543)",
+            "(service app-backend-service-dev) has started 1 tasks: (task 37b67b61bb2d45129d0c3be815a6773a)."
+        ]
+    },
+    {
+        "Service": "app-database-service-dev",
+        "Desired": 1,
+        "Running": 0,
+        "Pending": 1,
+        "Events": [
+            "(service app-database-service-dev) has started 1 tasks: (task 136d1c843cdf43adbb85ee79de709cf1).",
+            "(service app-database-service-dev) was unable to place a task. Reason: ResourceInitializationError: unable to pull secrets or registry auth: The task cannot pull registry auth from Amazon ECR: There is a connection issue between the task and Amazon ECR. Check your task network configuration. operation error ECR: GetAuthorizationToken, exceeded maximum number of attempts, 3, https response error StatusCode: 0, RequestID: , request send failed, Post \"https://api.ecr.ap-south-1.amazonaws.com/\": dial tcp 13.234.9.92:443: i/o timeout.",
+            "(service app-database-service-dev) has started 1 tasks: (task 481b50ae694a4543813fb3aeebc6fa1f).",
+            "(service app-database-service-dev) was unable to place a task. Reason: ResourceInitializationError: unable to pull secrets or registry auth: The task cannot pull registry auth from Amazon ECR: There is a connection issue between the task and Amazon ECR. Check your task network configuration. operation error ECR: GetAuthorizationToken, exceeded maximum number of attempts, 3, https response error StatusCode: 0, RequestID: , request send failed, Post \"https://api.ecr.ap-south-1.amazonaws.com/\": dial tcp 13.234.9.92:443: i/o timeout.",
+            "(service app-database-service-dev) has started 1 tasks: (task 3ee37cd7d63d4e66995e0c880ab7af1b)."
+        ]
+    }
+]
