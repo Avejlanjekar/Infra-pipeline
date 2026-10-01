@@ -23,6 +23,11 @@ variable "VPC_COMMON_TAGS" {
   type        = map(string)
 }
 
+variable "COMMON_TAGS" {
+  description = "Common tags for the VPC"
+  type        = map(string)
+}
+
 variable "IGW_NAME" {
   description = "Name of the Internet Gateway"
   type        = string

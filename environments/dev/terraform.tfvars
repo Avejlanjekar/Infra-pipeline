@@ -11,6 +11,12 @@ VPC_COMMON_TAGS = {
   ManagedBy   = "Terraform"
 }
 
+COMMON_TAGS = {
+  Environment = "dev"
+  Project     = "app"
+  ManagedBy   = "Terraform"
+}
+
 IGW_NAME = "app-igw-dev"
 
 PUBLIC_SUBNET_CIDRS = [
