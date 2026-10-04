@@ -304,4 +304,3 @@ module "ALB" {
 
   COMMON_TAGS = var.VPC_COMMON_TAGS
 }
-
